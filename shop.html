@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactpagina</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navigatie -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="POWER web" width="100" height="100">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav row">
+          <li class="nav-item ">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contactformulier -->
+  <main class="container mt-3">
+   <h1 class="col display-3 blauwgrijs text-center">may the power<br>be with you</h1>
+    <form action="#" method="post">
+
+      <!-- FIELDSET 1: GEGEVENS -->
+      <fieldset class="row">
+        <h1>contact</h1>
+        <ul>
+          <li>Vul het registratieformulier in.</li>
+          <li>Velden met een * zijn  verplicht</li>
+        </ul>
+      
+        <legend class="h2" style="font-size: 1.5rem;">Gegevens</legend>
+
+        <div class="col-md-6">
+          <label for="voornaam" class="form-label">Voornaam <span class="required">*</span></label>
+          <input type="text" id="voornaam" name="voornaam" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="achternaam" class="form-label">Achternaam <span class="required">*</span></label>
+          <input type="text" id="achternaam" name="achternaam" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="mobiel" class="form-label">Mobiel <span class="required">*</span></label>
+          <input type="tel" id="mobiel" name="mobiel" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="geboortedatum" class="form-label">Geboortedatum <span class="required">*</span></label>
+          <input type="date" id="geboortedatum" name="geboortedatum" class="form-control" required>
+        </div>
+      </fieldset>
+
+      <!-- FIELDSET 2: ACCOUNTGEGEVENS -->
+      <fieldset class="row g-3 mb-3">
+        <legend class="h2" style="font-size: 1.5rem;">Accountgegevens</legend>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail <span class="required">*</span></label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="password" class="form-label">Paswoord <span class="required">*</span></label>
+          <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="confirm" class="form-label">Bevestig paswoord <span class="required">*</span></label>
+          <input type="password" id="confirm" name="confirm" class="form-control" required>
+        </div>
+      </fieldset>
+
+      <!-- FIELDSET 3: ADRESGEGEVENS -->
+      <fieldset class="row g-3 mb-3">
+        <legend class="h2" style="font-size: 1.5rem;">Adresgegevens</legend>
+
+        <div class="col-md-6">
+          <label for="adres" class="form-label">adres</label>
+          <input type="text" id="adres" name="adres" class="form-control">
+        </div>
+
+        <div class="col-md-3 com-md-3">
+          <label for="postcode" class="form-label">Postcode</label>
+          <input type="text" id="postcode" name="postcode" class="form-control">
+        </div>
+
+        <div class="col-md-3 col-md-5">
+          <label for="stad" class="form-label">Stad</label>
+          <input type="text" id="stad" name="stad" class="form-control">
+        </div>
+
+        <div class="col-md-4">
+          <label for="land" class="form-label">Land</label>
+          <select id="land" name="land" class="form-select">
+            <option selected>België</option>
+            <option>Duitsland</option>
+            <option>Frankrijk</option>
+            <option>Luxemburg</option>
+            <option>Nederland</option>
+            <option>Verenigd Koninkrijk</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- FIELDSET 4: HUIDIGE STUDIE -->
+      <fieldset class="row g-3 mb-3">
+        <legend class="h2" style="font-size: 1.5rem;">Huidige studie</legend>
+
+        <div class="col-md-6">
+          <label for="studie" class="form-label">Opleiding</label>
+          <select id="studie" name="studie" class="form-select">
+            <option>Systeem- en netwerkbeheer</option>
+            <option>Internet of Things</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="tevredenheid" class="form-label">Hoe tevreden ben je van ons?</label>
+          <input type="range" id="tevredenheid" name="tevredenheid" min="0" max="10" step="1" class="form-range">
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="voorwaarden" required>
+            <label class="form-check-label" for="voorwaarden">
+              Algemene voorwarden gelezen en goedgekeurd
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Submit knop -->
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Verzenden</button>
+        <!-- CONTACT INFO -->
+<footer class="container mt-5 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>CONTACT</h4>
+      <p>
+        <strong>POWER web</strong><br>
+        <a href="mailto:powerweb@ap.be">powerweb@ap.be</a><br>
+        +32 45 67 89
+      </p>
+      <div class="d-flex gap-3 fs-4">
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4 text-muted">
+    Karim web
+  </div>
+</footer>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
